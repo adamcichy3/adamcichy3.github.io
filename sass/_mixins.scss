@@ -1,0 +1,19 @@
+@import 'variables';
+
+@mixin row{
+    width: 100%;
+    position: relative;
+    color:white;
+    
+    
+    img{
+        width: 100%;
+    }
+    
+    span{
+        font-size: $rowHeading;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

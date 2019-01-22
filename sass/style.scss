@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'mixins';
+@import 'extend';
+
+.cointaner
+{
+    font-family:sans-serif;
+    max-width: 600px/960px*100%;
+    border: $standard-border;
+    min-height: 500px;
+    margin: 10px auto;
+    PADDING:1em;
+    div{
+        text-align: center;
+        h1{
+            color:$pink;
+            font-size:1.4em;
+        }
+    }
+}
+
+p{
+    background-color:$dark-grey;
+    
+}
+
+a{
+    text-decoration: none;
+    color: $text;
+}
+a:hover
+{
+    color:$pink;
+}
+
+.row{
+    @include row;
+    text-align: right;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
